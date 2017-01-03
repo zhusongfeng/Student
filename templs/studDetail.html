@@ -1,0 +1,45 @@
+
+<div class="well" ng-controller="detailCtrl">
+    <div class="row">
+        <div class="col-md-3">
+            <img src="./images/c.jpg" alt="" style="width: 80%;height: 80%"/>
+            <a ui-sref="studList({studSem:$stateParams.studSem})"> <button class="btn btn-primary">返回列表</button></a>
+        </div>
+        <div class="col-md-9">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-md-2">姓名：</label>
+                    <div class="col-md-10 form-control-static">
+                        {{student.name}}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2">性别：</label>
+                    <div class="col-md-10 form-control-static">
+                        {{student.sex}}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2">年龄：</label>
+                    <div class="col-md-10 form-control-static">
+                        {{student.age}}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2">手机号：</label>
+                    <div class="col-md-10 form-control-static">
+                        {{student.tel}}
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-md-2">学期：</label>
+                    <div class="col-md-10 form-control-static">
+                        {{student.semester}}
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
